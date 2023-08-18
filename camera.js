@@ -6,7 +6,7 @@ let canvas = document.querySelector("#canvas");
 
 // https://whatwebcando.today/articles/choose-front-back-camera-stream/
 camera_button.addEventListener('click', async function() {
-   	let stream = await navigator.mediaDevices.getUserMedia({ video: {facingMode: "environment"}, audio: false });
+	let stream = await navigator.mediaDevices.getUserMedia({ video: {facingMode: "environment"}, audio: false });
     //    let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
 	video.srcObject = stream;
 });
